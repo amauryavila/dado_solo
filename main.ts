@@ -11,6 +11,7 @@ input.onButtonPressed(Button.A, function () {
             . . . . .
             . . . . .
             `)
+        basic.pause(1000)
     } else if (Valor_dado == 2) {
         basic.showLeds(`
             . . . . #
@@ -19,6 +20,7 @@ input.onButtonPressed(Button.A, function () {
             . . . . .
             # . . . .
             `)
+        basic.pause(1000)
     } else if (Valor_dado == 3) {
         basic.showLeds(`
             . . . . #
@@ -45,6 +47,7 @@ input.onButtonPressed(Button.A, function () {
             . . . . .
             # . . . #
             `)
+        basic.pause(1000)
     } else {
         basic.showLeds(`
             # . . . #
@@ -53,12 +56,15 @@ input.onButtonPressed(Button.A, function () {
             . . . . .
             # . . . #
             `)
+        basic.pause(1000)
     }
     Temp = 0
     if (Valor_dado > 0) {
         Temp = Temp + Valor_dado
     } else {
         basic.showIcon(IconNames.No)
+        basic.pause(1000)
     }
     basic.showIcon(IconNames.Yes)
+    basic.pause(5000)
 })
